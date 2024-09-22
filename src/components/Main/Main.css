@@ -1,0 +1,6 @@
+main {
+  border: 1px solid green;
+  padding: 1em;
+  min-width: 100%;
+  min-height: 80vh;
+}

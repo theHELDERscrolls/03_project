@@ -1,0 +1,6 @@
+header {
+  border: 1px solid blue;
+  padding: 1em;
+  min-width: 100%;
+  min-height: 10vh;
+}
