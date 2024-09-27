@@ -1,3 +1,11 @@
+:root {
+  --bg-dark: #121212;
+  --font-dark: #e0e0e0;
+  --bg-light: #f5f5f5;
+  --font-light: #333333;
+  --detail-color: #df4464;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,4 +14,23 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-decoration: none;
   list-style: none;
+  
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--font-light);
+}
+
+.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--font-dark);
+
+    a {
+      color: var(--font-dark);
+    }
+
+    #logo {
+      filter: drop-shadow(0px 0px 5px var(--font-dark));
+    }
 }

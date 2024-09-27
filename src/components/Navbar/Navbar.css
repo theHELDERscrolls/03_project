@@ -10,10 +10,58 @@ header {
   #logo {
     width: 50px;
     height: 50px;
+    filter: drop-shadow(-3px 3px 3px var(--font-light));
   }
 
   #search {
+    border: 1px solid indigo;
     width: 50%;
     height: auto;
+  }
+
+  nav {
+    ul {
+      width: 15em;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        a {
+          color: var(--font-light);
+          display: inline-block;
+          font-weight: bold;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            color: var(--detail-color);
+            transform: scale(1.1);
+          }
+
+          &:focus {
+            color: var(--detail-color);
+            text-decoration: underline;
+            transform: scale(1);
+          }
+
+          &:active {
+            color: var(--detail-color);
+            transform: scale(0.8);
+          }
+        }
+      }
+    }
+  }
+
+  #icons {
+    border: 1px solid indigo;
+    width: 10em;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 2em;
+      height: 2em;
+    }
   }
 }
