@@ -4,6 +4,7 @@
   --bg-light: #f5f5f5;
   --font-light: #333333;
   --detail-color: #df4464;
+  --notification-color: #2ecc71;
 }
 
 * {
@@ -14,23 +15,41 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-decoration: none;
   list-style: none;
-  
 }
 
 body {
   background-color: var(--bg-light);
   color: var(--font-light);
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-mode {
-    background-color: var(--bg-dark);
+  background-color: var(--bg-dark);
+  color: var(--font-dark);
+
+  a {
     color: var(--font-dark);
+  }
 
-    a {
-      color: var(--font-dark);
-    }
+  #logo {
+    filter: drop-shadow(0px 0px 5px var(--font-dark));
+  }
 
-    #logo {
-      filter: drop-shadow(0px 0px 5px var(--font-dark));
+  #search {
+    &:focus {
+      filter: drop-shadow(0px 0px 5px var(--detail-color));
     }
+  }
+
+  #notification {
+    filter: invert(1);
+  }
+
+  #ld-btn {
+    filter: invert(1);
+
+    &:active {
+      filter: invert(1) drop-shadow(0px 0px 10px var(--detail-color));
+    }
+  }
 }

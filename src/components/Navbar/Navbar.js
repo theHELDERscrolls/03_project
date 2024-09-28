@@ -14,14 +14,13 @@ export const createHeader = () => {
                 </li>
             </ul>
         </nav>
-        <input type="search" id="search" name="search" placeholder="Search for images..." aria-label="Search">
+        <input type="text" id="search" name="search" placeholder="Search for images..." aria-label="Search">
         <div id="icons">
             <div>
-                <span id="buble"></span>
+                <span></span>
                 <img id="notification" src="./src/assets/icons/icon_notification.svg" alt="Notifications">
             </div>
             <img id="ld-btn" src="./src/assets/icons/icon_sun.svg" alt="Light mode">
         </div>
-
   `;
 };
