@@ -6,9 +6,9 @@ import { createFooter } from "./src/components/Footer/Footer";
 import { changeMode } from "./src/utils/changeModeBtn";
 import { searchImg } from "./src/utils/getImages";
 
-const init = () => {
-  createHeader();
+const init = async () => {
   Home();
+  createHeader();
   createFooter();
   searchImg();
   changeMode();
