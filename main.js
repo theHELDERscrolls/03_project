@@ -1,16 +1,16 @@
 import "./style.css";
 
-//! RECUERDA: crea ".env" para no hacer pública la id de Unsplash.
-
 import { createHeader } from "./src/components/Navbar/Navbar";
-import { createMain } from "./src/components/Main/Main";
+import { Home } from "./src/pages/Home/Home";
 import { createFooter } from "./src/components/Footer/Footer";
 import { changeMode } from "./src/utils/changeModeBtn";
+import { searchImg } from "./src/utils/getImages";
 
 const init = () => {
   createHeader();
-  createMain();
+  Home();
   createFooter();
+  searchImg();
   changeMode();
 };
 

@@ -1,9 +1,39 @@
-export const getImgs =()=>{
-    try {
-        
-    } catch (error) {
-        console.error("The server doesn't respond");
-        alert("The server doesn't respond")
-        
+import { pageCleaner } from "./cleanPage";
+
+export let photoKeys = [];
+
+const fetchImg = async (keyword) => {
+  try {
+    const data = await fetch(
+      `https://api.unsplash.com/search/photos?page=1&query=${keyword}&per_page=10&client_id=${
+        import.meta.env.VITE_CLIENT_ID
+      }`
+    );
+    const res = await data.json();
+    photoKeys = res.results;
+    console.log(photoKeys);
+  } catch (error) {
+    console.error("The server is not responding");
+    alert("The server is not responding");
+  }
+};
+
+export const searchImg = () => {
+  const main = document.querySelector("main");
+  const input = document.querySelector("#search");
+
+  input.addEventListener("keypress", async (event) => {
+    if (event.key === "Enter") {
+      pageCleaner(main);
+      await fetchImg(input.value); // necesitamos esperar a completar esta función antes de comprobar el resto. La definimos como asincrónica
+      input.value = "";
+
+
+      //! POR QUÉ NO FUNCIONA?
+      const p = document.querySelector("#message");
+      if (photoKeys.length === 0) {
+        p.textContent = "No results found";
+      }
     }
-}
+  });
+};
