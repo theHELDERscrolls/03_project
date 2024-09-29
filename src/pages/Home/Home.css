@@ -1,4 +1,4 @@
-/* #photo-results {
+#photo-results {
   display: grid;
   align-items: start;
   justify-content: center;
@@ -8,58 +8,65 @@
 
 .card-img {
   position: relative;
+  overflow: hidden;
+  width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+  aspect-ratio: 1/1; /* Esto asegura una relación de aspecto cuadrada */
+}
 
-  img {
-    border-radius: 10px;
-    width: 100%;
-    max-height: auto;
-    object-fit: cover;
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene las proporciones de la imagen y rellena el contenedor */
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
 
-    transition: all 0.3s ease-in-out;
-  }
+.card-img:hover .ppal-img {
+  filter: blur(3px);
+  transform: scale(1.01);
+}
 
-  .like,
-  .download-btn {
-    display: none;
-  }
-
-  &:hover {
-    img {
-      transform: scale(1.02);
-      filter: blur(3px);
-    }
-  }
+.card-img:hover .like,
+.card-img:hover .download-btn {
+  opacity: 1;
+  visibility: visible;
 }
 
 .like,
 .download-btn {
-  display: flex;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
+  display: flex;
   align-items: center;
   justify-content: center;
-  img {
-    width: 25px;
-    height: 25px;
-  }
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .download-btn {
-  padding: 5px;
+  width: 40px;
+  height: 40px;
   right: 1em;
   top: 1em;
   background-color: var(--detail-color);
-  border-radius: 100%;
+  border-radius: 50%;
   border: 3px solid var(--font-dark);
 }
 
 .like {
+  padding: 5px;
   gap: 5px;
   bottom: 1em;
   left: 1em;
   font-weight: bold;
+  border-radius: 5px;
+  background-color: var(--bg-dark);
   color: var(--font-dark);
+}
 
-  img {
-    filter: invert(1);
-  }
-} */
+.like img,
+.download-btn img {
+  width: 25px;
+  height: 25px;
+  filter: invert(1);
+}

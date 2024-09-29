@@ -9,6 +9,7 @@
 }
 
 header {
+  z-index: 1;
   position: sticky;
   top: 0;
   padding: 1em;
@@ -17,6 +18,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: var(--bg-light);
 
   #logo {
     width: 50px;
@@ -79,7 +81,7 @@ header {
   #icons {
     width: 10em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     img {
       cursor: pointer;
