@@ -7,10 +7,10 @@ export const createHeader = () => {
         <nav>
             <ul>
                 <li>
-                    <a id="home_link" href="#">Home</a>
+                    <a id="home_link" href="#home">Home</a>
                 </li>
                 <li>
-                    <a id="explore_link" href="#">Explore</a>
+                    <a id="explore_link" href="#explore">Explore</a>
                 </li>
             </ul>
         </nav>

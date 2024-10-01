@@ -24,7 +24,7 @@ body {
 }
 
 main {
-  padding: 1em;
+  padding: 2em;
   width: 100%;
   min-height: 90vh;
 }
@@ -46,6 +46,7 @@ main {
   }
 
   #search {
+    border-color: var(--bg-light);
     &:focus {
       filter: drop-shadow(0px 0px 5px var(--detail-color));
     }
@@ -60,6 +61,16 @@ main {
 
     &:active {
       filter: invert(1) drop-shadow(0px 0px 10px var(--detail-color));
+    }
+  }
+
+  footer {
+    a {
+      color: var(--detail-color);
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

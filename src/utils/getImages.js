@@ -6,7 +6,7 @@ export let photoKeys = [];
 const fetchImg = async (keyword) => {
   try {
     const data = await fetch(
-      `https://api.unsplash.com/search/photos?page=1&query=${keyword}&per_page=10&client_id=${
+      `https://api.unsplash.com/search/photos?page=1&query=${keyword}&per_page=12&client_id=${
         import.meta.env.VITE_CLIENT_ID
       }`
     );
@@ -31,4 +31,11 @@ export const searchImg = () => {
       printImages();
     }
   });
+};
+
+export const defaultSearch = async () => {
+  const photoResults = document.querySelector("#photo-results");
+  pageCleaner(photoResults);
+  await fetchImg("super sport");
+  printImages();
 };
