@@ -11,6 +11,6 @@ export const Home = () => {
     <p id="message"></p>
     <ul id="photo-results"></ul>
     `;
-  fetchImg("casa");
+  fetchImg("dark");
   printImages();
 };

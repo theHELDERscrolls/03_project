@@ -20,9 +20,9 @@
 }
 
 .card-img {
+  animation: reveal linear both;
   animation-range: entry 10% cover 30%;
   animation-timeline: view();
-  animation: reveal linear both;
   aspect-ratio: 1/1;
   border-radius: 10px;
   overflow: hidden;
@@ -43,7 +43,6 @@
 }
 
 .card-img:hover .ppal-img {
-  filter: grayscale(1);
   transform: scale(1.1);
 }
 
