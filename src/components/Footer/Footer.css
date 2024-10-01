@@ -1,11 +1,11 @@
 footer {
-  padding: 1em;
-  min-width: 100%;
-  min-height: 5em;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  min-height: 5em;
+  min-width: 100%;
+  padding: 1em;
 
   span, a {
     font-weight: 600;

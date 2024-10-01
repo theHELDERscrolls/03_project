@@ -11,5 +11,4 @@ export const Home = () => {
     <ul id="photo-results"></ul>
     `;
     defaultSearch()
-    
 };

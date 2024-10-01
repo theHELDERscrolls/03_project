@@ -9,31 +9,30 @@
 }
 
 header {
-  z-index: 1;
+  align-items: center;
+  background-color: var(--bg-light);
+  display: flex;
+  justify-content: space-around;
+  min-height: 10vh;
+  min-width: 100%;
+  padding: 1em;
   position: sticky;
   top: 0;
-  padding: 1em;
-  min-width: 100%;
-  min-height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: var(--bg-light);
-
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 
   #logo {
-    width: 50px;
-    height: 50px;
     filter: drop-shadow(-3px 3px 3px var(--font-light));
+    height: 50px;
+    width: 50px;
   }
 
   nav {
     ul {
-      width: 15em;
-      height: auto;
       display: flex;
+      height: auto;
       justify-content: space-around;
+      width: 15em;
 
       li {
         a {
@@ -64,14 +63,13 @@ header {
   }
 
   #search {
-    border: 3px solid var(--font-light);
     border-radius: 10px;
-    width: 50%;
+    border: 3px solid var(--font-light);
+    font-weight: 500;
     height: auto;
     padding: 1em;
     transition: all 0.3s ease-in-out;
-
-    font-weight: 500;
+    width: 50%;
 
     &:focus {
       border-color: var(--detail-color);
@@ -121,13 +119,12 @@ header {
   }
 
   .buble {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 5px solid var(--notification-color);
-    border-radius: 5px;
-
     animation: popNot 0.5s alternate infinite;
+    border-radius: 5px;
+    border: 5px solid var(--notification-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
   }
 }
