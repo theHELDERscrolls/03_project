@@ -20,12 +20,12 @@ export const fetchImg = async (keyword) => {
 };
 
 export const searchImg = () => {
-  const photoResults = document.querySelector("#photo-results");
+  const ul = document.querySelector("#photo-results");
   const input = document.querySelector("#search");
 
   input.addEventListener("keypress", async (event) => {
     if (event.key === "Enter") {
-      pageCleaner(photoResults);
+      pageCleaner(ul);
       await fetchImg(input.value); // necesitamos esperar a completar esta función antes de comprobar el resto. La definimos como asincrónica
       input.value = "";
       printImages();

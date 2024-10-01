@@ -1,3 +1,3 @@
 export const pageCleaner = (container) => {
-  container.innerHTML = "";
+  container.innerHTML = " ";
 };

@@ -7,8 +7,9 @@ export const printImages = () => {
 
   if (photoKeys.length === 0) {
     p.textContent = "No results found";
+    ul.innerHTML = "";
   } else {
-   p.textContent = "";
+    p.textContent = "";
     for (const photo of photoKeys) {
       const card = cardDesing(photo);
       ul.appendChild(card);

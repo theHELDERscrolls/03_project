@@ -1,7 +1,8 @@
 import "./Home.css";
 
 import { pageCleaner } from "../../utils/cleanPage";
-import { defaultSearch } from "../../utils/defaultSearch";
+import { fetchImg } from "../../utils/getImages";
+import { printImages } from "../../utils/printImg";
 
 export const Home = () => {
   const main = document.querySelector("main");
@@ -10,5 +11,6 @@ export const Home = () => {
     <p id="message"></p>
     <ul id="photo-results"></ul>
     `;
-    defaultSearch()
+  fetchImg("casa");
+  printImages();
 };
