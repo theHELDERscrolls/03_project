@@ -1,6 +1,7 @@
 import "./Home.css";
 
 import { pageCleaner } from "../../utils/cleanPage";
+import { defaultSearch } from "../../utils/defaultSearch";
 
 export const Home = () => {
   const main = document.querySelector("main");
@@ -9,4 +10,6 @@ export const Home = () => {
     <p id="message"></p>
     <ul id="photo-results"></ul>
     `;
+    defaultSearch()
+    
 };
