@@ -3,7 +3,7 @@ import "./Navbar.css";
 export const createHeader = () => {
   const header = document.querySelector("header");
   header.innerHTML = `
-        <img id="logo" src="public/assets/logo_copynterest.png" alt="Copynterest logo">
+        <img id="logo" src="/assets/logo_copynterest.png" alt="Copynterest logo">
         <nav>
             <ul>
                 <li>
@@ -18,9 +18,9 @@ export const createHeader = () => {
         <div id="icons">
             <div>
                 <span></span>
-                <img id="notification" src="public/assets/icon_notification.svg" alt="Notifications">
+                <img id="notification" src="/assets/icon_notification.svg" alt="Notifications">
             </div>
-            <img id="ld-btn" src="D:/GitHub/03_project/public/assets/icon_sun.svg" alt="Light mode">
+            <img id="ld-btn" src="/assets/icon_sun.svg" alt="Light mode">
         </div>
   `;
 };

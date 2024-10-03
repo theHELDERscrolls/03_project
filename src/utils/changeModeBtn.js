@@ -5,9 +5,9 @@ export const changeMode = () => {
     body.classList.toggle("dark-mode");
 
     if (btn.src.includes("icon_sun.svg")) {
-      btn.src = "src/assets/icons/icon_moon.png";
+      btn.src = "/assets/icon_moon.png";
     } else {
-      btn.src = "src/assets/icons/icon_sun.svg";
+      btn.src = "/assets/icon_sun.svg";
     }
   });
 };
