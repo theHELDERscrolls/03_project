@@ -15,7 +15,7 @@ export const cardDesing = (photo) => {
   li.appendChild(a);
 
   const downloadImg = document.createElement("img");
-  downloadImg.src = "src/assets/icons/icon_download.png";
+  downloadImg.src = "public/assets/icon_download.png";
   downloadImg.alt = "download";
   a.appendChild(downloadImg);
 
@@ -23,7 +23,7 @@ export const cardDesing = (photo) => {
   div.className = "like";
 
   const heart = document.createElement("img");
-  heart.src = "src/assets/icons/icon_heart.png";
+  heart.src = "public/assets/icon_heart.png";
   heart.alt = "likes";
   div.appendChild(heart);
 
