@@ -6,6 +6,6 @@ export const Explore = () => {
   const main = document.querySelector("main");
   pageCleaner(main);
   main.innerHTML = `
-  <h1>VAMOH A VÉ SI ESTO FURGA</h1>
+  <h1>UNDER CONSTRUCTION</h1>
   `;
 };

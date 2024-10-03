@@ -27,6 +27,9 @@ main {
   min-height: 90vh;
   padding: 2em;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .dark-mode {
@@ -64,6 +67,10 @@ main {
       filter: invert(1) drop-shadow(0px 0px 10px var(--detail-color));
     }
   }
+
+#load-btn {
+  color: var(--font-dark);
+}
 
   footer {
     a {

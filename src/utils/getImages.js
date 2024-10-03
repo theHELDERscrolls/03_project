@@ -27,7 +27,7 @@ export const searchImg = () => {
   input.addEventListener("keypress", async (event) => {
     if (event.key === "Enter") {
       await fetchImg(input.value); // necesitamos esperar a completar esta función antes de comprobar el resto. La definimos como asincrónica
-      input.value = "";
+      //input.value = "";
     }
   });
 };

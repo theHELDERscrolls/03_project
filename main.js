@@ -7,6 +7,7 @@ import { Explore } from "./src/pages/Explore/Explore";
 import { Home } from "./src/pages/Home/Home";
 import { linkPage } from "./src/utils/linkPage";
 import { searchImg } from "./src/utils/getImages";
+import { loadMoreBtn } from "./src/components/Load-btn/Load-btn";
 
 const init = () => {
   Home();
@@ -16,6 +17,7 @@ const init = () => {
   changeMode();
   linkPage("#home_link", Home);
   linkPage("#explore_link", Explore);
+  loadMoreBtn();
 };
 
 init();
