@@ -3,6 +3,7 @@ import "./Home.css";
 import { pageCleaner } from "../../utils/cleanPage";
 import { fetchImg } from "../../utils/getImages";
 import { printImages } from "../../utils/printImg";
+import { loadMoreBtn } from "../../components/Load-btn/Load-btn";
 
 export const Home = () => {
   const main = document.querySelector("main");
@@ -14,4 +15,5 @@ export const Home = () => {
   `;
   fetchImg("dark");
   printImages();
+  loadMoreBtn();
 };

@@ -14,7 +14,7 @@ header {
   display: flex;
   filter: drop-shadow(0px 0px 10px var(--bg-dark));
   justify-content: space-around;
-  min-height: 10vh;
+  height: 10vh;
   min-width: 100%;
   padding: 1em;
   position: sticky;
@@ -86,8 +86,8 @@ header {
 
     img {
       cursor: pointer;
-      width: 2em;
-      height: 2em;
+      width: 25px;
+      height: 25px;
     }
 
     div {
@@ -118,7 +118,6 @@ header {
       filter: drop-shadow(0px 0px 10px var(--detail-color));
     }
   }
-
   .buble {
     animation: popNot 0.5s alternate infinite;
     border-radius: 5px;
@@ -127,5 +126,16 @@ header {
     right: 0;
     top: 0;
     z-index: 1;
+  }
+}
+
+@media (max-width: 950px) {
+  nav {
+    display: none;
+  }
+
+  #icons {
+    width: 25px;
+    background-color: red;
   }
 }

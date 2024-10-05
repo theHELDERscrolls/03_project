@@ -17,7 +17,7 @@ export const createHeader = () => {
         <input type="text" id="search" name="search" placeholder="Search for images..." aria-label="Search">
         <div id="icons">
             <div>
-                <span></span>
+                <span class="buble"></span>
                 <img id="notification" src="/assets/icon_notification.svg" alt="Notifications">
             </div>
             <img id="ld-btn" src="/assets/icon_sun.svg" alt="Light mode">

@@ -21,8 +21,8 @@ export const loadMoreBtn = () => {
       photoKeys.push(...newImages);
       printImages(newImages);
     } catch (error) {
-      console.error("The server is not responding");
-      alert("The server is not responding");
+      console.error("Please, search something to get more photos");
+      alert("Please, search something to get more photos");
     }
   });
 };
