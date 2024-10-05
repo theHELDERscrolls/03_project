@@ -80,7 +80,7 @@ header {
   }
 
   #icons {
-    width: 10em;
+    width: 20%;
     display: flex;
     justify-content: space-around;
 
@@ -132,10 +132,5 @@ header {
 @media (max-width: 950px) {
   nav {
     display: none;
-  }
-
-  #icons {
-    width: 25px;
-    background-color: red;
   }
 }
